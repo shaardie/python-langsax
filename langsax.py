@@ -56,7 +56,8 @@ class Corkscrew():
                 os.write(sys.stdout.fileno(), info)
 
 
-def main(argv):
+def main():
+    argv = sys.argv
     if len(argv) not in [5, 6]:
         print("corkscrew\nusage: corkscrew <proxyhost> <proxyport> <desthost> "
               "<destport> [authfile]")
